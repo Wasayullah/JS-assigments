@@ -913,7 +913,7 @@ output = `<span class = "fs-4 text-primary">
 <span class = "fs-4  px-3 text-white bg-success">The correct code is here below 👇</span>
 <br><br>
 
-    <p class = "fs-4 py-3 px-3 bg-dark text-white border rounded-4" style = "width: 50%;" >
+    <p class = "fs-4 py-3 px-3 bg-dark text-white border rounded-4" style = "width: 20%;" >
 var greeting; <br>
 var hour = 13;  <br>
 if (hour < 18) {  <br>
