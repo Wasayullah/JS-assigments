@@ -788,5 +788,11 @@ else{
 }
 
 document.getElementById("ch-9_question_11").innerHTML = output;
+*/
 
+//----------------------------------------------------------------------------------------------------------------
+
+
+/*
+Chapters - 12 to 13 : IF...ELSE & ELSE IF STATEMENT, TESTING SET OF CONDITIONS    
 */
