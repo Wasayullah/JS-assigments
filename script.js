@@ -1,0 +1,687 @@
+/*
+Chapter - 1: ALERTS
+
+alert("Hey There!");
+alert("Error! Please enter a valid password.");
+alert("Welcome to JS Land...\nHappy Coding!");
+alert("Welcome to JS Land...");
+alert("Happy Coding!\nPrevent this page from creating additional dialogs.");
+*/
+//----------------------------------------------------------------------------------------------------------------
+
+
+
+/*
+Chapter-2 : VARIABLES FOR STRINGS
+//1.Declare a variable called username.
+
+
+let username;
+
+
+//2.Declare a variable called myName & assign to it a string that represents your Full Name.
+
+let myName = "Mohammad Wasayullah";
+alert("My name is " + myName);
+
+//example>>
+
+username = prompt("Enter your name:");
+alert("Welcome " + username + "!");
+
+//3.Write script to a) Declare a JS variable, titled message. b) Assign “Hello World” to variable message c) Display the message in alert box.
+
+    let message;
+    message = "Hello World";
+    alert(message);
+
+//4.Write a script to save student’s bio data in JS variables and show the data in alert boxes.
+
+    let name_ = "Johne Doe";
+    let age = "15 years old";
+    let course = "Certified Mobile Application Development";
+
+    alert(name_);
+    alert(age);
+    alert(course);
+
+//5.Write a script to display the following alert using one JS variable:
+
+    alert("PIZZA\nPIZZ\nPIZ\nPI\nP");
+
+//6. Declare a variable called email and assign to it a string that represents your Email Address. Show the blow mentioned message in an alert box.
+
+    let email = "wasayullahmohammad@gmail.com";
+    alert("My email address is " + email);
+
+//7.Declare a variable called book & give it the value “A smarter way to learn JavaScript”. Display the following message in an alert box:
+
+    let book = "A smarter way to learn JavaScript";
+    alert("I am trying to learn from the Book " +' '+ book);
+
+//8.Write a script to display this in browser through JS
+
+    document.body.innerHTML += "<p>Yah! I can write HTML content through JavaScript</p>";
+
+//9.Write a script to display the following message on your browser through JS
+
+    let design = "▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬";
+    alert(design);
+*/
+
+//----------------------------------------------------------------------------------------------------------------
+
+
+
+
+/*
+Chapter - 3 : VARIABLES FOR NUMBERS
+
+
+    //1. Declare a variable called age & assign to it your age. Show your age in an alert box.
+var age =18;
+alert("I am " + age + " years old");
+
+//2. Declare & initialize a variable to keep track of how many times a visitor has visited a web page. Show his/her number of visits on your web page. For example: "You have visited this site N times".
+var visitCount = localStorage.getItem("visitCount") || 0;
+visitCount++;
+localStorage.setItem("visitCount", visitCount);
+alert("You have visited this site " + visitCount + " times");
+
+//3. Declare a variable called birthYear & assign to it your birth year. Show the following message in your browser:
+var birthYear = 2005;
+document.writeln("My birth year is " + birthYear + "<br>");
+document.writeln("Data type of my declared variable is " + typeof(birthYear) + "<br><br>");
+//4. A visitor visits an online clothing store www.xyzClothing.com . Write a script to store in variables the following information:
+//a. Visitor's name
+//b. Product title
+//c. Quantity i.e. how many products a visitor wants to order
+//Show the following message in your browser: "John Doe ordered 5 T-shirt(s) on XYZ Clothing store".
+
+var visitorName = prompt("Enter your name:");
+var productTitle = prompt("Enter product title:");
+var quantity = prompt("Enter quantity:");
+
+document.writeln(visitorName + " ordered " + quantity + " " + productTitle + " on XYZ Clothing store");
+*/
+
+//----------------------------------------------------------------------------------------------------------------
+
+
+
+/*
+Chapter - 4 : VARIABLE NAMES: LEGAL & ILLEGAL
+//1. Declare 3 variables in one statement.
+var var1, var2, var3;
+//2. Declare 5 legal & 5 illegal variable names.
+//Legal variable names
+var myName;
+var age;
+var $salary;
+var _address;
+var city1;
+//Illegal variable names
+//var 1stName; //starts with a number
+//var my-name; //contains hyphen
+//var var; //reserved keyword
+//var my name; //contains space
+//var @age; //contains special character
+//3. Display this in your browser
+document.writeln("<h1>Rules for naming JS variables</h1>");
+document.writeln("Variable names can only contain letters, numbers, $, and _. For example: $my_1stVariable<br>");
+document.writeln("Variables must begin with a letter, $, or _. For example: $name, _name or name<br>");
+document.writeln("Variable names are case sensitive<br>");
+document.writeln("Variable names should not be JS keywords<br>");
+*/
+
+//----------------------------------------------------------------------------------------------------------------
+
+
+
+/*
+Chapter - 5 : MATH EXPRESSIONS
+
+// 1.Write a program that take two numbers & add them in a new variable. Show the result in your browser.
+
+num_1 = prompt("Enter first number:");
+num_2 = prompt("Enter second number:");
+document.writeln("The sum of ", num_1, " and ", num_2, " is ", Number(num_1) + Number(num_2), "<br>");
+
+
+
+// 2. Repeat task1 for subtraction, multiplication, division & modulus.
+
+document.writeln("The difference of ", num_1, " and ", num_2, " is ", Number(num_1) - Number(num_2), "<br>");
+
+document.writeln("The product of ", num_1, " and ", num_2, " is ", Number(num_1) * Number(num_2), "<br>");
+
+document.writeln("The quotient of ", num_1, " and ", num_2, " is ", Number(num_1) / Number(num_2), "<br>");
+document.writeln("The modulus of ", num_1, " and ", num_2, " is ", Number(num_1) % Number(num_2), " <br><br>");
+
+
+
+// 3.Do the following using JS Mathematic Expressions
+// a. Declare a variable.
+// b. Show the value of variable in your browser like “Value
+// after variable declaration is: ??”.
+// c. Initialize the variable with some number.
+// d. Show the value of variable in your browser like “Initial
+// value: 5”.
+// e. Increment the variable.
+// f. Show the value of variable in your browser like “Value
+// after increment is: 6”.
+// g. Add 7 to the variable.
+// h. Show the value of variable in your browser like “Value after addition is: 13”.
+// i. Decrement the variable.
+// j. Show the value of variable in your browser like “Value
+// after decrement is: 12”.
+// k. Show the remainder after dividing the variable’s value by 3.
+
+
+var a;
+document.writeln("The value of a is: ", a, "<br>");
+a = 5;
+document.writeln("The value of a is: ", a, "<br>");
+
+document.writeln("The Initial value of a is: ", a, "<br>");
+
+++a;
+
+document.writeln("Value after increment is ", a, "<br>");
+
+a = a + 7;
+document.writeln("Value after addition is: ", a, "<br>");
+
+--a;
+document.writeln("Value after decrement is: ", a, "<br>");
+
+a = a % 3;
+
+document.writeln("The remainder is : ", a, "<br>");
+
+
+
+// 4. Cost of one movie ticket is 600 PKR. Write a script to store ticket price in a variable & calculate the cost of buying 5 tickets to a movie.
+
+var ticketCost = 600;
+document.writeln("Total cost to buy 5 Tickets to a movie is ", ticketCost * 5, "PKR<br><br>");
+
+
+
+// 5. Write a script to display multiplication table of any number in your browser.
+
+tableNum = prompt("Enter a number to diplay its table: ");
+document.writeln("The multiplication number of ", tableNum, " <br>");
+for (var i = 1; i <= 10; i++) {
+    document.writeln(tableNum + " x " + i + " = " + (tableNum * i) + "<br>");
+}
+
+
+
+// 6. The Temperature Converter: It’s hot out! Let’s make a converter based on the steps here.
+// a.Store a Celsius temperature into a variable.
+// b.Convert it to Fahrenheit & output “NNoC is NNoF”.
+// c.Now store a Fahrenheit temperature into a variable.
+// d.Convert it to Celsius & output “NNoF is NNoC”.
+
+
+var celsius = parseFloat(prompt("Enter the temperature in Cesius: "));
+var celTofah = (celsius * 9 / 5) + 32;
+document.writeln(celsius, "&deg;C is ", celTofah, "&deg;F<br>");
+
+var fahrenheit = parseFloat(prompt("Enter the temperature in Farenheit: "));
+fahTocel = (fahrenheit - 32) * 5 / 9;
+document.writeln(fahrenheit, "&deg;F is ", fahTocel, "&deg;C");
+
+
+
+// 7.Write a program to implement checkout process of a shopping cart system for an e-commerce website. Store the following in variables
+// a. Price of item 1
+// b. Price of item 2
+// c. Ordered quantity of item 1
+// d. Ordered Quantity of item 2
+// e. Shipping charges Compute the total cost & show the receipt in your browser.  8. Store total marks & marks obtained by a student in 2
+// variables. Compute the percentage & show the result in
+// your browser
+
+
+document.writeln("<h1>Shopping Cart</h1>");
+var priceItem1 = 650;
+var quantityItem1 = 3;
+var priceItem2 = 100;
+var quantityItem2 = 7;
+var shippingCharges = 100;
+var totalCost = (priceItem1 + priceItem2 + shippingCharges);
+document.writeln("Price of item 1 is: ", priceItem1, "<br>");
+document.writeln("Quantity of item 1 is: ", quantityItem1, "<br>");
+document.writeln("Price of item 2 is: ", priceItem2, "<br>");
+document.writeln("Quantity of item 2 is: ", quantityItem2, "<br>");
+document.writeln("Shipping Charges: ", shippingCharges, "<br>");
+document.writeln("Total cost of your order is: ", totalCost);
+
+
+
+// 8. Store total marks & marks obtained by a student in 2
+// variables. Compute the percentage & show the result in
+// your browser
+
+document.writeln("<h1>Mark Sheet</h1>")
+var marksFull = 980;
+var marksObtained = 804;
+var percentage = (marksObtained / marksFull) * 100
+document.writeln("Total marks: ", marksFull, "<br>Marks Obtained: ", marksObtained, "<br>Percentage: ", percentage, "%")
+
+
+
+// 9. Assume we have 10 US dollars & 25 Saudi Riyals. Write a
+// script to convert the total currency to Pakistani Rupees.
+// Perform all calculations in a single expression.
+// (Exchange rates : 1 US Dollar = 104.80 Pakistani Rupee
+// and 1 Saudi Riyal = 28 Pakistani Rupee)
+
+document.writeln("<h1>Currency in PKR</h1>");
+var USDtoPKR = 104.80 * 10; var SDRtoPKR = 28 * 25;
+
+
+
+// 10.  Write a program to initialize a variable with some number and do arithmetic in following sequence:
+// Perform all calculations in a single expression
+// a. Add 5 ;
+// b. Multiply by 10 ;
+// c. Divide the result by 2
+var num = 1; num += 5; num *= 10; num /= 2;
+document.writeln("The final result after arithmetic operations is: " + num + "<br><br>");
+
+
+// 11.  The Age Calculator: Forgot how old someone is?
+// Calculate it!
+// a. Store the current year in a variable.
+// b. Store their birth year in a variable.
+// c. Calculate their 2 possible ages based on the stored
+// values.
+// Output them to the screen like so: “They are either NN or NN
+// years old”.
+document.writeln("<h1>Age Calculator</h1>");
+var currentYear = 2026;
+var birthYear = prompt("Enter you birth year: ");
+age1 = currentYear - birthYear;
+age2 = age1 - 1;
+document.writeln("Your Age is: ", age1, " or ", age2, "<br><br>");
+
+
+
+// 12.  The Geometrizer: Calculate properties of a circle.
+// a. Store a radius into a variable.
+// b. Calculate the circumference based on the radius, and
+// output “The circumference is NN”.
+// (Hint : Circumference of a circle = 2 π r , π = 3.142)
+// Calculate the area based on the radius, and output “The
+//  area is NN”. (Hint : Area of a circle = π r2, π = 3.142)
+
+document.writeln("<h1>The Geometrizer</h1>");
+var radius = parseFloat(prompt("Enter the value of radius: "));
+circumference = 2 * Math.PI * radius;
+area = Math.PI * radius ** 2;
+document.writeln("Circumference of Circle: ", circumference, "<br>", "Area of the circle is: ", area)
+
+
+//13.The Lifetime Supply Calculator: Ever wonder how
+// much a “lifetime supply” of your favorite snack is?
+// Wonder no more.
+// a. Store your favorite snack into a variable
+// b. Store your current age into a variable.
+// c. Store a maximum age into a variable.
+// d. Store an estimated amount per day (as a number).
+// e. Calculate how many would you eat total for the rest of
+// your life. Output the result to the screen like so: “You will need
+// NNNN to last you until the ripe old age of NN”.
+
+document.writeln("<h1>The Lifetime Supply Calculator</h1>");
+var favoriteSnack = prompt("Enter the name of your favourite snack: ");
+var currentAge = prompt("Enter your current age: ");
+var maxAge = prompt("Enter your estimated maximum age: ");
+var amountPerDay = prompt("How many times do you eat these snacks a day: ");
+var yearsRemaining = maxAge - currentAge;
+var totalSnacks = yearsRemaining * 365 * amountPerDay;
+
+document.writeln("You will need ", totalSnacks, " " + favoriteSnack, " to last you until the ripe old age of ", maxAge, "<br>");
+*/
+
+//----------------------------------------------------------------------------------------------------------------
+
+
+/*
+Chapters - 6 to 9 : MATH EXPRESSIONS
+
+// 1.  Write a program to take a number in a variable, do the  required arithmetic to display the following result in your browser:
+let a = +prompt("Enter the value of a")
+document.getElementById("ch-6_question_1").innerHTML=`
+
+<p class="fs-4 fw-bold">Result:</p>
+<p class="fs-4">The value of a is: ${a}</p>
+<p class="fs-4 fw-bold">...................................................</p<br<br>
+<p class="fs-4">The value of ++a is: ${++a}</p>
+<p class="fs-4">Now the value of a is: ${a}</p><br><br>
+<p class="fs-4">The value of a++ is: ${a++}</p>
+<p class="fs-4">Now the value of a is: ${a}</p><br><br>
+<p class="fs-4">The value of --a is: ${--a}</p>
+<p class="fs-4">Now the value of a is: ${a}</p><br><br>
+<p class="fs-4">The value of a-- is: ${a--}</p>
+<p class="fs-4">Now the value of a is: ${a}</p>
+`
+
+// 2.  What will be the output in variables a, b & result after execution of the following script:
+var a = 2, b = 1;
+var result = --a - --b + ++b + b--;
+//  Explain the output at each stage:
+//  --a ;
+//  --a - --b;
+//  --a - --b + ++b;
+//  --a - --b + ++b + b--;
+
+//Answer:
+// a = 1;
+// b = 0
+// result = 3;
+//Explaination:
+
+// In  first step  the value of "a" will first decreased and the go to solve further because of the pre-decrement(--a). At this stage "a = 1" , "b = 1" , and "result = 1"
+
+// In second step the value "1"  will experience a decrement of 0 .This is because the pre-decrementing(--b) of b. At this stage "a = 1" , "b = 0", and "result = 1"
+
+// In third step the value "1" will experience an increment of 1 due to the pre-incrementing (++b) of "b". At this stage "a = 1" , "b = 1", and "result = 2"
+
+// In the final step the value "2" will experience an increment of 1 due to the value stored in "b", however the value of "b" will become "0" because of the post-decrementing(b--) but will not affect the "result". At this stage "a = 1" , "b = 0", and "result = 3"
+
+document.getElementById("ch-6_question_2").innerHTML=`
+<p class="fs-4"> a is: ${a}</p>
+<p class="fs-4"> b is: ${b}</p>
+<p class="fs-4"> result is: ${result}</p>
+`
+// 3. Write a program that takes input a name from user & greet the user.
+const _name = prompt("Enter your name");
+document.getElementById("ch-6_question_3").innerHTML=`
+<strong><p class = "fs-4">Assalam-u-alaikum ${_name} , Welcome to my webpage.</p>
+`
+
+//4. #NO-Question found.
+
+//5. Write a program to take input a number from user &  display it’s multiplication table on your browser. If user  does not enter a new number, multiplication table of 5  should be displayed by default.
+
+let number = Number(prompt("Enter a number to display it multiplication table", 5))
+document.getElementById("ch-6_question_5").innerHTML += `<h1 class = "fs-4">Multiplication table of ${number}</h1>`
+for (let i = 1; i <= 11; i++) {
+    let j = number * i;
+    document.getElementById("ch-6_question_5").innerHTML += `
+
+
+    <p class = "fs-4">${number} x ${i} = ${j}
+    <br></p>
+    `
+}
+
+
+//6. Take
+//  a) Take three subjects name from user and store them in 3  different variables.
+//  b) Total marks for each subject is 100, store it in another  variable.
+//  c) Take obtained marks for first subject from user and  stored it in different variable.
+// d) Take obtained marks for remaining 2 subjects from user  and store them in variables.
+//  e) Now calculate total marks and percentage and show the  result in browser like this.(Hint: user table)
+
+let subject_1 = prompt("Enter the name of first subject","Computer");
+let subject_2 = prompt("Enter the name of second subject","Physics");
+let subject_3 = prompt("Enter the name of third subject","Maths");
+
+const each_subject = 100;
+
+const marksSubject_1 = +prompt(`Enter your obtained marks in ${subject_1}`);
+const percentage_1 = marksSubject_1/each_sub;
+const marksSubject_2 = +prompt(`Enter your obtained marks in ${subject_2}`);
+const percentage_2 = marksSubject_2/each_subject;
+const marksSubject_3 = +prompt(`Enter your obtained marks in ${subject_3}`);
+const percentage_3 = marksSubject_3/each_subject;
+
+const obtained = marksSubject_1 + marksSubject_2 + marksSubject_3;
+
+const total = 300;
+const total_Percentage = (obtained / total).toFixed(2);
+
+document.getElementById("ch-6_question_6").innerHTML += `
+<h1 class="heading text-center">Marksheet</h1>
+<table class="table text-center" style = "width:50%;" border="5">
+    <tr>
+        <th class="bg-dark text-white">Subject</th>
+        <th class="bg-dark text-white">Total</th>
+        <th class="bg-dark text-white">Obtained</th>
+        <th class="bg-dark text-white">Percentage</th>
+    </tr>
+    <tr>
+        <td class="bg-success text-white">${subject_1}</td>
+        <td class="bg-wheat">${each_subject}</td>
+        <td class="bg-wheat">${marksSubject_1}</td>
+        <td class="bg-wheat">${percentage_1}</td>
+    </tr>
+    <tr>
+        <td class="bg-success text-white">${subject_2}</td>
+        <td class="bg-wheat">${each_subject}</td>
+        <td class="bg-wheat">${marksSubject_2}</td>
+        <td class="bg-wheat">${percentage_2}</td>
+    </tr>
+    <tr>
+        <td class="bg-success text-white">${subject_3}</td>
+        <td class="bg-wheat">${each_subject}</td>
+        <td class="bg-wheat">${marksSubject_3}</td>
+        <td class="bg-wheat">${percentage_3}</td>
+    </tr>
+    <tr>
+        <td class=" fs-5 bg-primary text-white">Result</td>
+        <td class=" fs-5 bg-dark text-white">${total}</td>
+        <td class=" fs-5 bg-dark text-white">${obtained}</td>
+        <td class="fs-5 bg-dark text-white">${total_Percentage}</td>
+    </tr>
+</table>
+
+
+`
+*/
+
+//----------------------------------------------------------------------------------------------------------------
+
+
+
+/*
+Chapters - 9 to 11 : USER INPUT & CONDITIONAL 
+STATEMENT
+
+// 1.  Write a program to take “city” name as input from user.If  user enters “Karachi”, welcome the user like this: 
+// “Welcome to city of lights”
+
+let city = prompt("Enter the name of you city").toLowerCase();
+
+if(city == "karachi"){
+    document.getElementById("ch-9_question_1").innerHTML+=`
+    <p class = fs-4>Welcome to the city of lights ✨</p>
+    `
+}else if(city == "peshawar"){
+    document.getElementById("ch-9_question_1").innerHTML+=`
+    <p class = fs-4>Welcome to the city of flowers🌸🌺</p>
+    `
+}else{
+    document.getElementById("ch-9_question_1").innerHTML+=`
+<p class = fs-4>${city} is a good city</p>
+`
+}
+
+// 2. Write a program to take “gender” as input from user. If the  user is male, give the message: Good Morning Sir. If the  user is female, give the message: Good Morning Ma’am.
+
+gender = prompt("Enter your gender (Male or Female)","Male").toLowerCase();
+if(gender == "male"){
+    document.getElementById("ch-9_question_2").innerHTML+=`
+    <p class = "fs-4">Good Morning Sir.
+    `
+}else if(gender == "female"){
+    document.getElementById("ch-9_question_2").innerHTML+=`
+    <p class = "fs-4">Good Morning Ma'am.
+    `
+}else{
+    document.getElementById("ch-9_question_2").innerHTML+=`
+    <p class = "fs-4">Please enter a valid gender🙏.
+    `
+}
+
+// 3. Write a program to take input color of road traffic signal  from the user & show the message according to this table:
+
+let color = prompt("Enter the traffic light color", "red").toLowerCase();
+
+let output = `
+<table class="table" style = "width:50%;">
+<tr>
+<th class="text-primary bg-dark">Signal color</th>
+<th class="text-primary bg-dark">Message</th>
+</tr>
+`;
+
+if (color === "red") {
+    output += `
+    <tr>
+        <td class="text-white bg-danger">Red </td>
+        <td class="text-white bg-danger">Must Stop 🤚</td>
+    </tr>`;
+} 
+else if (color === "yellow") {
+    output += `
+    <tr>
+        <td class="text-dark bg-warning">Yellow</td>
+        <td class="text-dark bg-warning">Ready to Move 😇</td>
+    </tr>`;
+} 
+else if (color === "green") {
+    output += `
+    <tr>
+        <td class="text-white bg-success">Green</td>
+        <td class="text-white bg-success">Move Now ✅</td>
+    </tr>`;
+} 
+else {
+    output += `
+<tr>
+    <td colspan="2" class="text-danger bg-dark">Invalid Color 🧐</td>
+    </tr>`;
+}
+
+
+output += `</table>`;
+
+document.getElementById("ch-9_question_3").innerHTML = output
+
+
+
+//4. Write a program to take input remaining fuel in car (in litres) from user. If the current fuel is less than 0.25 litres,  show the message “Please refill the fuel in your car”
+
+fuel = +prompt("Enter the amount of fuel left in your car ",10);
+let output ;
+if(fuel <= 0.25){
+    output = `
+    <p class = "fs-4 bg-dark text-danger" style = "width:50%;">Please refill the fuel in your car</p>
+    `
+}else if(fuel > 0.25){
+    output=
+    `<p class = "fs-4 bg-dark text-success" style = "width:50%;">Ok have a good-ride </p>`
+}
+document.getElementById("ch-9_question_4").innerHTML = output;
+
+
+// 5. Run this script, & check whether alert message would be displayed or not. Record the outputs. 
+//a.
+// var a = 4; 
+// if (++a === 5){
+//  alert("given condition for variable a is true"); }
+//ANSWER:
+// "Alert message displayed"
+
+//b.
+//  var b = 82;
+//  if (b++ === 83){
+//  alert("given condition for variable b is true"); }
+//ANSWER:
+// "Alert message doesn't displayed"
+
+//c.
+//  var c = 12;
+//  if (c++ === 13){
+//  alert("condition 1 is true"); }
+//  if (c === 13){
+//  alert("condition 2 is true"); } 
+//  if (++c < 14){
+//  alert("condition 3 is true"); }
+//  if(c === 14){
+//  alert("condition 4 is true"); }
+//ANSWER:
+// "Alert message 2 & 4 displayed"
+
+//d.
+//  var materialCost = 20000;
+//  var laborCost = 2000;
+//  var totalCost = materialCost + laborCost;
+//  if (totalCost === laborCost + materialCost){
+//  alert("The cost equals"); }
+//ANSWER:
+// "Alert message displayed"
+
+//e.
+//  if (true){
+//  alert("True"); }
+//  if (false){
+//  alert("False"); }
+//ANSWER:
+// "Alert message displayed"
+
+//f.
+//  if("car" < "cat"){
+//  alert("car is smaller than cat"); } 
+//ANSWER:
+// "Alert message displayed"
+
+
+
+//6. Write a program to take input the marks obtained in three  subjects & total marks. Compute & show the resulting  percentage on your page. Take percentage & compute  grade as per following table: 
+
+var sub_1_total = +prompt("Enter your total marks in Subject_1");   
+var sub_1_obtained = +prompt("Enter your obtained marks in Subject_1");
+var sub_2_total = +prompt("Enter your total marks in Subject_2");
+var sub_2_obtained = +prompt("Enter your obtained marks in Subject_2");
+var sub_3_total = +prompt("Enter your total marks in Subject_3");
+var sub_3_obtained = +prompt("Enter your obtained marks in Subject_3");
+
+var obtained = sub_1_obtained+sub_2_obtained+sub_3_obtained;
+var total = sub_1_total+sub_2_total+sub_3_total
+var percentage = ( (obtained/total)*100).toFixed(2)
+
+
+if(percentage>=80){
+    var grade = "A-one"
+    var remarks = "Excellent"
+}else if(percentage>=70){
+    var grade = "A"
+    var remarks = "Good"
+}
+else if(percentage>=60){
+    var grade = "B"
+    var remarks = "You need to improve"
+}
+else{
+    var grade = "Fail"
+    var remarks = "Sorry"
+}
+var output = `
+    <h1>Marksheet</h1><br><br>
+    <p class = fs-4>Total marks: ${total}</p>
+    <p class = fs-4>Marks obtained: ${obtained}</p>
+    <p class = fs-4>Percentage: ${percentage}%</p>
+    <p class = fs-4>Grade: ${grade}</p>
+    <p class = fs-4>Remarks: ${remarks}</p>
+
+`
+document.getElementById("ch-9_question_6").innerHTML = output;
+
+*/
