@@ -1003,4 +1003,4 @@ percentage_2  = score[1]/500*100
 percentage_3  = score[2]/500*100
 
 var output = `<p class = "fs-4 ">Score of ${names[0]}:</p>`
-document.getElementById("chapter-14_wuestion")
+document.getElementById("chapter-14_question_8").innerHTML= output;
