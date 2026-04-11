@@ -999,8 +999,8 @@ document.getElementById("ch-14_question_7").innerHTML = output;
 var names = ["Mohammad","Ali","Umer"]
 var score = [408,278,409]
 
-var output =
-`<p class = "fs-4 ">Score of ${names[0]} is ${score[0]}.Percentage: ${(score[0]/500*100).toFixed(2)}<i><b>%</b></i></p>
+var output =`
+<p class = "fs-4 ">Score of ${names[0]} is ${score[0]}.Percentage: ${(score[0]/500*100).toFixed(2)}<i><b>%</b></i></p>
 <p class = "fs-4 ">Score of ${names[1]} is ${score[1]}.Percentage: ${(score[1]/500*100).toFixed(2)}<i><b>%</b></i></p>
 <p class = "fs-4 ">Score of ${names[2]} is ${score[2]}.Percentage: ${(score[2]/500*100).toFixed(2)}<i><b>%</b></i></p>`
 document.getElementById("ch-14_question_8").innerHTML= output;
