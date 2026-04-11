@@ -968,15 +968,16 @@ Chapters - 12 to 13 : ARRAYS
 //  7. Declare and Initialize an array and store available education qualifications in Pakistan (e.g. SSC, HSC, BCS, BS, BCOM, MS, M. Phil., PhD). Show the listed qualifications in your browser
 */  
 var output = `var array =[]`
-document.getElementById("chapter_14")
+document.getElementById("chapter-14_question_1")
 var output=`var obj = new Object()`
-document.getElementById("chapter_14")
+document.getElementById("chapter-14_question_2")
 var output=`var str = ["Mohammad","Wasayullah","Javascript"]`
-document.getElementById("chapter_14")
+document.getElementById("chapter-14_question_3")
 var output=`var numbers = [1,2,3]`
-document.getElementById("chapter_14")
+document.getElementById("chapter-14_question_4")
 var output=`var boolean = [true , false , true]`
-document.getElementById("chapter_14")
+document.getElementById("chapter-14_question_5")
 var output=`var mixed = ["Mohammad",3,true]`
-document.getElementById("chapter_14")
+document.getElementById("chapter-14_question_6")
+
 
