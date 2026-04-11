@@ -967,9 +967,9 @@ Chapters - 12 to 13 : ARRAYS
 //  6. Declare and initialize a mixed array.
 //  7. Declare and Initialize an array and store available education qualifications in Pakistan (e.g. SSC, HSC, BCS, BS, BCOM, MS, M. Phil., PhD). Show the listed qualifications in your browser
 */  
-var array =[]
-var obj = new Object()
-var str = ["Mohammad","Wasayullah","Javascript"]
-var numbers = [1,2,3]
-var boolean = [true , false , true]
-var mixed = ["Mohammad",3,true]
+var output = `var array =[]`
+var output=`var obj = new Object()`
+var output=`var str = ["Mohammad","Wasayullah","Javascript"]`
+var output=`var numbers = [1,2,3]`
+var output=`var boolean = [true , false , true]`
+var output=`var mixed = ["Mohammad",3,true]`
