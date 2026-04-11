@@ -957,15 +957,8 @@ document.getElementById("ch-12_question_7").innerHTML = output;
 
 /*
 Chapters - 12 to 13 : ARRAYS
-
-
-
-
-
-
-
-//  7. Declare and Initialize an array and store available education qualifications in Pakistan (e.g. SSC, HSC, BCS, BS, BCOM, MS, M. Phil., PhD). Show the listed qualifications in your browser
 */  
+// 1.  Declare an empty array using JS literal notation to store student names in future.
 var output = `var array =[]`
 document.getElementById("chapter-14_question_1")
 
@@ -989,5 +982,8 @@ document.getElementById("chapter-14_question_5")
 var output=`var mixed = ["Mohammad",3,true]`
 document.getElementById("chapter-14_question_6")
 
+//  7. Declare and Initialize an array and store available education qualifications in Pakistan (e.g. SSC, HSC, BCS, BS, BCOM, MS, M. Phil., PhD). Show the listed qualifications in your browser
+
+var qualifications = 
 
 
