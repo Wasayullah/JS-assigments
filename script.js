@@ -788,5 +788,165 @@ else{
 }
 
 document.getElementById("ch-9_question_11").innerHTML = output;
+*/
+
+//----------------------------------------------------------------------------------------------------------------
+
+
+/*
+Chapters - 12 to 13 : IF...ELSE & ELSE IF STATEMENT, TESTING SET OF CONDITIONS    
+
+
+// 1.  Write a program that takes a character (number or string) in a variable & checks whether the given input is a number, uppercase letter or lower case letter.(Hint: ASCII codes:- A=65, Z=90, a=97, z=122). 
+
+var ch = prompt("Enter a character");
+var code = ch.charCodeAt(0);
+var output;
+
+if(code >= 48 && code <= 57){
+    output = `<p class = "fs-4">It is a number</p>`;
+}
+else if(code >= 65 && code <= 90){
+    output = `<p class = "fs-4">It is an uppercase letter</p>`;
+}
+else if(code >= 97 && code <= 122){
+    output = `<p class = "fs-4">It is a lowercase letter</p>`;
+}
+else{
+    output = `<p class = "fs-4">Unknown character</p>`;
+}
+
+document.getElementById("ch-12_question_1").innerHTML = output;
+
+
+//2. Write a JavaScript program that accept two integers and display the larger. Also show if the two integers are equal. 
+
+var num1 = +prompt("Enter first number");
+var num2 = +prompt("Enter second number");
+var output;
+
+if(num1 > num2){
+    output = `<p class = "fs-4">${num1} is larger</p>`;
+}
+else if(num2 > num1){
+    output = `<p class = "fs-4">${num2} is larger</p>`;
+}
+else{
+    output = `<p class = "fs-4">Both numbers are equal</p>`;
+}
+
+document.getElementById("ch-12_question_2").innerHTML = output;
+
+
+// 3. Write a program that takes input a number from user &  state whether the number is positive, negative or zero. 
+
+var num = +prompt("Enter a number");
+var output;
+
+if(num > 0){
+    output = `<p class = "fs-4">Positive number</p>`;
+}
+else if(num < 0){
+    output = `<p class = "fs-4">Negative number</p>`;
+}
+else{
+    output = `<p class = "fs-4">Zero</p>`;
+}
+
+document.getElementById("ch-12_question_3").innerHTML = output;
+
+
+// 4. Write a program that takes a character (i.e. string of length 1) and returns true if it is a vowel, false otherwise
+
+var ch = prompt("Enter a character").toLowerCase();
+var output;
+
+if(ch === "a" || ch === "e" || ch === "i" || ch === "o" || ch === "u"){
+    output = `<p class = "fs-4">True</p>`;
+}
+else{
+    output = `<p class = "fs-4">False</p>`;
+}
+
+document.getElementById("ch-12_question_4").innerHTML = output;
+
+
+// 5. Write a program that
+//  a. Store correct password in a JS variable
+//  b.  Asks user to enter his/her password 
+//  c.   Validate the two passwords:
+//    i. Check if user has entered password. If not, then give message “ Please enter your password”
+//    ii. Check if both passwords are same. If they are same, show message “Correct! The password you entered matches the original password”. Show “Incorrect password” otherwise.
+
+var correctPassword = "12345";
+var userPassword = prompt("Enter your password");
+var output;
+
+if(!userPassword){
+    output = `<p class = "fs-4 text-danger">Please enter your password</p>`;
+}
+else if(userPassword === correctPassword){
+    output = `<p class = "fs-4 text-success">Correct! The password you entered matches the original password</p>`;
+}
+else{
+    output = `<p class = "fs-4 text-danger">Incorrect password</p>`;
+}
+
+document.getElementById("ch-12_question_5").innerHTML = output;
+
+
+//6. This if/else statement does not work. Try to fix it: 
+//var greeting; 
+//var hour = 13; 
+//if (hour < 18) { 
+//greeting = "Good day"; 
+//else 
+//greeting = "Good evening"; 
+//}
+
+//ANSWER:
+output = `<span class = "fs-4 text-primary">
+. <span class = "fs-4 text-danger">"{"</span> was opened after if <br>
+. But <span class = "fs-4 text-danger">"}"</span>  was missing before else<br>
+. Also <span class = "fs-4 text-danger">"{"</span> is missing after opening else <br></span>
+<br>
+<span class = "fs-4  px-3 text-white bg-success">The correct code is here below 👇</span>
+<br><br>
+
+    <p class = "fs-4 py-3 px-3 bg-dark text-white border rounded-4" style = "width: 20%;" >
+var greeting; <br>
+var hour = 13;  <br>
+if (hour < 18) {  <br>
+greeting = "Good day";  <br>
+else{  <br>
+greeting = "Good evening";  <br>
+}  <br>
+    </p>`;
+document.getElementById("ch-12_question_6").innerHTML = output;
+
+
+//7. Write a program that takes time as input from user in 24 hours clock format like: 1900 = 7pm. Implement the following case using if, else & else if statements  
+
+var time = +prompt("Enter time in 24-hour format (e.g. 1900)");
+var output;
+if(!time){
+    output = `<p class = "fs-4 text-danger">Please enter the time</p>`;
+}else if(time >= 0 && time < 1200){
+    output = `<p class = "fs-4">Good Morning</p>`;
+}
+else if(time >= 1200 && time < 1700){
+    output = `<p class = "fs-4">Good Afternoon</p>`;
+}
+else if(time >= 1700 && time < 2100){
+    output = `<p class = "fs-4">Good Evening</p>`;
+}
+else if(time >= 2100 && time <= 2359){
+    output = `<p class = "fs-4">Good Night</p>`;
+}
+else{
+    output = `<p class = "fs-4 text-danger">Invalid time</p>`;
+}
+
+document.getElementById("ch-12_question_7").innerHTML = output;
 
 */
