@@ -957,7 +957,7 @@ document.getElementById("ch-12_question_7").innerHTML = output;
 
 /*
 Chapters - 12 to 13 : ARRAYS
-*/  
+
 // 1.  Declare an empty array using JS literal notation to store student names in future.
 var output = `var array =[]`
 document.getElementById("chapter-14_question_1")
@@ -991,7 +991,6 @@ for(var i=0;i<qualifications.length; i++){
     <p class="fs-5">${i+1}) ${qualifications[i]}</p>
     `
 }
-
 document.getElementById("ch-14_question_7").innerHTML = output;
-
+*/  
 
