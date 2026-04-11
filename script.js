@@ -992,8 +992,6 @@ for(var i=0;i<qualifications.length; i++){
     `
 }
 document.getElementById("ch-14_question_7").innerHTML = output;
+
+// 8. Write a program to store 3 student names in an array.Take another array to store score of these three students. Assume that total marks are 500 for each student, display the scores & percentages of students
 */  
-// 8. Write a program to store 3 student names in an array.Take
-another array to store score of these three students.
-Assume that total marks are 500 for each student, display
-the scores & percentages of students
