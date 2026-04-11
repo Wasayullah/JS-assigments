@@ -959,24 +959,33 @@ document.getElementById("ch-12_question_7").innerHTML = output;
 Chapters - 12 to 13 : ARRAYS
 
 
-// 1.  Declare an empty array using JS literal notation to store student names in future.
 
-//  3. Declare and initialize a strings array.
-//  4.  Declare and initialize a numbers array.
-//  5.  Declare and initialize a boolean array.
-//  6. Declare and initialize a mixed array.
+
+
+
+
 //  7. Declare and Initialize an array and store available education qualifications in Pakistan (e.g. SSC, HSC, BCS, BS, BCOM, MS, M. Phil., PhD). Show the listed qualifications in your browser
 */  
 var output = `var array =[]`
 document.getElementById("chapter-14_question_1")
+
+//  2. Declare an empty array using JS object notation to store student names in future.
 var output=`var obj = new Object()`
 document.getElementById("chapter-14_question_2")
+
+//  3. Declare and initialize a strings array.
 var output=`var str = ["Mohammad","Wasayullah","Javascript"]`
 document.getElementById("chapter-14_question_3")
+
+//  4.  Declare and initialize a numbers array.
 var output=`var numbers = [1,2,3]`
 document.getElementById("chapter-14_question_4")
+
+//  5.  Declare and initialize a boolean array.
 var output=`var boolean = [true , false , true]`
 document.getElementById("chapter-14_question_5")
+
+//  6. Declare and initialize a mixed array.
 var output=`var mixed = ["Mohammad",3,true]`
 document.getElementById("chapter-14_question_6")
 
