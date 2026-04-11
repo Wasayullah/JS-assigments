@@ -987,7 +987,9 @@ var qualifications = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil.", "PhD"
 
 var output = `<p class = "fs-4 fw-bold">Qualifications:</p>`;
 for(var i=0;i<=qualifications.length; i++){
+    output=`
     
+    `
 }
 
 document.getElementById("ch-14_question_7").innerHTML = output;
