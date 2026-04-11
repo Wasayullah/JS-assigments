@@ -684,4 +684,109 @@ var output = `
 `
 document.getElementById("ch-9_question_6").innerHTML = output;
 
+
+// 7. Guess game: Store a secret number (ranging from 1 to 10) in a variable.
+// Prompt user to guess the secret number.
+//  a. If user guesses the same number, show “Bingo! Correct  answer”.
+//  b. If the guessed number +1 is the secret number, show
+//  “Close enough to the correct answer”. 
+
+var num = 50;
+close_answer = num-1;
+guess = +prompt("Enter a number to guess the secret number")
+
+if(guess == num){
+    output = `<p class = "fs-4">Bingo! Correct  answer</p>`
+}else if(guess == close_answer){
+    output = `<p class = "fs-4">Close enough to the correct answer</p>`
+}else{
+    output = `<p class = "fs-4">Try again</p>`
+}
+document.getElementById("ch-9_question_7").innerHTML = output;
+
+
+
+// 8. Write a program to check whether the given number is divisible by 3. Show the message to the user if the number is divisible by 3.
+
+var number = +prompt("Enter a number to check whether it is divisible by 3 or not.")
+if(number%3==0){
+    output = `<p class = "fs-4">The number is divisible by 3</p>`
+}else{
+    output = `<p class = "fs-4">The number is not divisible by 3</p>`
+}
+document.getElementById("ch-9_question_8").innerHTML = output;
+
+
+//9. Write a program that checks whether the given input is an even number or an odd number.
+
+var number = +prompt("Enter a number to check whether it is odd or even")
+if(number%2==0){
+    output = `<p class = "fs-4">The number is Even</p>`
+}else{
+    output = `<p class = "fs-4">The number is Odd</p>`
+}
+document.getElementById("ch-9_question_9").innerHTML = output;
+
+
+// 10. Write a program that takes temperature as input and shows a message based on following criteria 
+//a. T > 40 then “It is too hot outside.” 
+//b. T > 30 then “The Weather today is Normal.” 
+//c. T > 20 then “Today’s Weather is cool.” 
+//d. T > 10 then “OMG! Today’s weather is so Cool.”
+var T = +prompt("Enter the vlue of temperature")
+
+if(T>=40){
+    output = `<p class = "fs-4">It is too hot outside.</p>`
+}else if(T>=30){
+    output = `<p class = "fs-4">The Weather today is Normal.</p>`
+}else if(T>=20){
+    output = `<p class = "fs-4">Today’s Weather is cool.</p>`
+}
+else{
+    output = `<p class = "fs-4">OMG! Today’s weather is so Cool.</p>`
+}
+document.getElementById("ch-9_question_10").innerHTML = output;
+
+
+// 11. Write a program to create a calculator for +,-,*, / & % using if statements. Take the following input: 
+// a. First number 
+// b. Second number 
+// c. Operation (+, -, *, /, %) 
+// Compute & show the calculated result to user.   
+
+var num1 = +prompt("Enter first number");
+var num2 = +prompt("Enter second number");
+var op = prompt("Enter operation (+, -, *, /, %)");
+
+var output;
+
+if(op === "+"){
+    output = `<p class = "fs-4">Result: ${num1 + num2}</p>`;
+}
+else if(op === "-"){
+    output = `<p class = "fs-4">Result: ${num1 - num2}</p>`;
+}
+else if(op === "*"){
+    output = `<p class = "fs-4">Result: ${num1 * num2}</p>`;
+}
+else if(op === "/"){
+    if(num2 === 0){
+        output = `<p class = "fs-4 text-danger">Error: Cannot divide by zero</p>`;
+    } else {
+        output = `<p class = "fs-4">Result: ${num1 / num2}</p>`;
+    }
+}
+else if(op === "%"){
+    if(num2 === 0){
+        output = `<p class = "fs-4 text-danger">Error: Cannot divide by zero</p>`;
+    } else {
+        output = `<p class = "fs-4">Result: ${num1 % num2}</p>`;
+    }
+}
+else{
+    output = `<p class = "fs-4 text-danger">Invalid operation</p>`;
+}
+
+document.getElementById("ch-9_question_11").innerHTML = output;
+
 */
