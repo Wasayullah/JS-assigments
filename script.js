@@ -997,13 +997,13 @@ document.getElementById("ch-14_question_7").innerHTML = output;
 */  
 var Name = prompt("Enter your name");
 var Score = prompt("Enter your score")
-var Names =[]
-var Scores =[]
-Names.push(Name)
+var name =[]
+var score =[]
+names.push(name)
+scores.push(score)
 
-
-var names = ["Mohammad","Ali","Umer"]
-var score = [408,278,409]
+// var names = ["Mohammad","Ali","Umer"]
+// var score = [408,278,409]
 
 
 
