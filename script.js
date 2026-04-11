@@ -986,9 +986,9 @@ document.getElementById("chapter-14_question_6")
 var qualifications = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil.", "PhD"];
 
 var output = `<p class = "fs-4 fw-bold">Qualifications:</p>`;
-for(var i=1;i<=qualifications.length; i++){
+for(var i=0;i<=qualifications.length; i++){
     output+=`
-    <p class="fs-5">${i} ${}</p>
+    <p class="fs-5">${i+1} ${qualifications[i]}</p>
     `
 }
 
