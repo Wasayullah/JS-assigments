@@ -998,9 +998,9 @@ document.getElementById("ch-14_question_7").innerHTML = output;
 var names = ["Mohammad","Ali","Umer"]
 var score = [408,278,409]
 
-percentage_1  = score[0]/500*100
-percentage_2  = score[1]/500*100
-percentage_3  = score[2]/500*100
+// percentage_1  = score[0]/500*100
+// percentage_2  = score[1]/500*100
+// percentage_3  = score[2]/500*100
 
-var output = `<p class = "fs-4 ">Score of ${names[0]} is ${score[0]}:${}</p>`
+var output = `<p class = "fs-4 ">Score of ${names[0]} is ${score[0]}.Percentage: ${score[0]/500*100}%</p>`
 document.getElementById("ch-14_question_8").innerHTML= output;
