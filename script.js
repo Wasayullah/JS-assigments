@@ -995,12 +995,13 @@ document.getElementById("ch-14_question_7").innerHTML = output;
 
 // 8. Write a program to store 3 student names in an array.Take another array to store score of these three students. Assume that total marks are 500 for each student, display the scores & percentages of students
 */  
+name = 
 var names = ["Mohammad","Ali","Umer"]
 var score = [408,278,409]
 
 
 
-var output = `<p class = "fs-4 ">Score of ${names[0]} is ${score[0]}.Percentage: ${(score[0]/500*100).toFixed(2)}<i>%</i></p>
-<p class = "fs-4 ">Score of ${names[1]} is ${score[1]}.Percentage: ${(score[1]/500*100).toFixed(2)}<i>%</i></p>
-<p class = "fs-4 ">Score of ${names[2]} is ${score[2]}.Percentage: ${(score[2]/500*100).toFixed(2)}<i>%</i></p>`
+var output = `<p class = "fs-4 ">Score of ${names[0]} is ${score[0]}.Percentage: ${(score[0]/500*100).toFixed(2)}<i><b>%</b></i></p>
+<p class = "fs-4 ">Score of ${names[1]} is ${score[1]}.Percentage: ${(score[1]/500*100).toFixed(2)}<i><b>%</b></i></p>
+<p class = "fs-4 ">Score of ${names[2]} is ${score[2]}.Percentage: ${(score[2]/500*100).toFixed(2)}<i><b>%</b></i></p>`
 document.getElementById("ch-14_question_8").innerHTML= output;
