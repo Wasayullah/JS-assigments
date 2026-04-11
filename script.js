@@ -960,7 +960,7 @@ Chapters - 12 to 13 : ARRAYS
 
 
 // 1.  Declare an empty array using JS literal notation to store student names in future.
-//  2. Declare an empty array using JS object notation to store student names in future.
+
 //  3. Declare and initialize a strings array.
 //  4.  Declare and initialize a numbers array.
 //  5.  Declare and initialize a boolean array.
@@ -979,5 +979,6 @@ var output=`var boolean = [true , false , true]`
 document.getElementById("chapter-14_question_5")
 var output=`var mixed = ["Mohammad",3,true]`
 document.getElementById("chapter-14_question_6")
+
 
 
