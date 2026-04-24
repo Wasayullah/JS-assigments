@@ -956,7 +956,7 @@ document.getElementById("ch-12_question_7").innerHTML = output;
 
 
 /*
-Chapters - 12 to 13 : ARRAYS
+Chapters - 14 to 16 : ARRAYS
 
 // 1.  Declare an empty array using JS literal notation to store student names in future.
 var output = `var array =[]`
